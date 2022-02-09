@@ -1,10 +1,9 @@
-package StepDefinations;
+package StepDefinitions;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,13 +11,25 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 public class Login {
-    WebDriver driver;
+   static WebDriver driver;
+//    @FindBy(id = "txtUsername")
+//    WebElement username;
+//    @FindBy(id = "txtPassword")
+//    WebElement password;
+//    @FindBy(id = "btnLogin")
+//    WebElement loginButton;
+
+//    public Login(){
+//        PageFactory.initElements(driver, this);
+//    }
+
     @Given("^user is on Login page$")
     public void user_is_on_Login_page()
     {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+        driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/");
     }
 
