@@ -4,6 +4,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.hc.core5.reactor.Command;
+import org.junit.Assert;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,16 +15,6 @@ import java.util.concurrent.TimeUnit;
 
 public class Login {
    static WebDriver driver;
-//    @FindBy(id = "txtUsername")
-//    WebElement username;
-//    @FindBy(id = "txtPassword")
-//    WebElement password;
-//    @FindBy(id = "btnLogin")
-//    WebElement loginButton;
-
-//    public Login(){
-//        PageFactory.initElements(driver, this);
-//    }
 
     @Given("^user is on Login page$")
     public void user_is_on_Login_page()
@@ -54,13 +47,7 @@ public class Login {
     @Then("^user is on Homepage$")
     public void user_is_on_Homepage()
     {
-        if(driver.getCurrentUrl().equalsIgnoreCase("https://opensource-demo.orangehrmlive.com/index.php/dashboard"))
-        {
-            System.out.println("Test1 Pass");
-        } else {
-            System.out.println("Test1 Failed");
-        }
-        //Assert.assertEquals(driver.getTitle(), "OrangeHRM");
+        Assert.assertEquals(driver.getTitle(), "OrangeHRM");
         driver.close();
     }
 }
