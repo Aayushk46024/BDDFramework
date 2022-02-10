@@ -129,6 +129,87 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.uri("C:/Users/AayushKhandelwal/BDDFramework/src/main/java/FeatureFiles/DeleteUser.feature");
+formatter.feature({
+  "name": "Checking the search add user functionality in the application",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Check the search add user functionality with required detail",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "user is on Login page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Login.user_is_on_Login_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is logging successfully and goto homepage page",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "AddUser.user_is_logging_successfully_and_goto_homepage_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is click on Admin button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddUser.user_is_click_on_Admin_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters Username in the Username text field for search",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SearchAddUser.user_enters_Username_in_the_Username_text_field_for_search()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user selects the user as per the enter name",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "DeleteUser.user_selects_the_user_as_per_the_enter_name()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on the Delete button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "DeleteUser.user_clicks_on_the_Delete_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is successfully Deleted",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "DeleteUser.user_is_successfully_Deleted()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.uri("C:/Users/AayushKhandelwal/BDDFramework/src/main/java/FeatureFiles/ForgetPassword.feature");
 formatter.feature({
   "name": "Check the ForgetPassword functionality of the application",
