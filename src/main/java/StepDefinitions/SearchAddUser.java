@@ -8,6 +8,7 @@ import static StepDefinitions.AddUser.userName;
 import static StepDefinitions.Login.driver;
 
 public class SearchAddUser {
+
     @And("^user enters Username in the Username text field for search$")
     public void user_enters_Username_in_the_Username_text_field_for_search()
     {

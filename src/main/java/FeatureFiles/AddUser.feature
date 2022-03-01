@@ -1,7 +1,9 @@
 Feature: Checking the Add user functionality in the application
   Scenario: Check Add user functionality with required detail
     Given user is on Login page
-    When user is logging successfully and goto homepage page
+    And user enters username in the username textfield
+    And user enters password in the password textfield
+    And user clicks on the Login button
     And user is click on Admin button
     And user is click on Add button
     And user selects the User Role
@@ -10,5 +12,5 @@ Feature: Checking the Add user functionality in the application
     And user selects the Status
     And user enters Password in the password text field
     And user enters Confirm Password in the confirm password text field
-    And user clicks on the SAVE button
+    When user clicks on the SAVE button
     Then user successfully added the user

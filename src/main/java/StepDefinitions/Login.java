@@ -1,12 +1,11 @@
 package StepDefinitions;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 import org.junit.Assert;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,13 +25,13 @@ public class Login {
         driver.get("https://opensource-demo.orangehrmlive.com/");
     }
 
-    @When("^user enters username in the username textfield$")
+    @And("^user enters username in the username textfield$")
     public void user_enters_username_in_the_username_textfield()
     {
         driver.findElement(By.id("txtUsername")).sendKeys("Admin");
     }
 
-    @When("^user enters password in the password textfield$")
+    @And("^user enters password in the password textfield$")
     public void user_enters_password_in_the_password_textfield()
     {
         driver.findElement(By.id("txtPassword")).sendKeys("admin123");

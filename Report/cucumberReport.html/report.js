@@ -20,11 +20,31 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user is logging successfully and goto homepage page",
-  "keyword": "When "
+  "name": "user enters username in the username textfield",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "AddUser.user_is_logging_successfully_and_goto_homepage_page()"
+  "location": "Login.user_enters_username_in_the_username_textfield()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters password in the password textfield",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Login.user_enters_password_in_the_password_textfield()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on the Login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Login.user_clicks_on_the_Login_button()"
 });
 formatter.result({
   "status": "passed"
@@ -111,7 +131,7 @@ formatter.result({
 });
 formatter.step({
   "name": "user clicks on the SAVE button",
-  "keyword": "And "
+  "keyword": "When "
 });
 formatter.match({
   "location": "AddUser.user_clicks_on_the_SAVE_button()"
@@ -151,11 +171,31 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user is logging successfully and goto homepage page",
+  "name": "user enters username in the username textfield",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Login.user_enters_username_in_the_username_textfield()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters password in the password textfield",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Login.user_enters_password_in_the_password_textfield()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on the Login button",
   "keyword": "When "
 });
 formatter.match({
-  "location": "AddUser.user_is_logging_successfully_and_goto_homepage_page()"
+  "location": "Login.user_clicks_on_the_Login_button()"
 });
 formatter.result({
   "status": "passed"
@@ -274,7 +314,7 @@ formatter.result({
 });
 formatter.step({
   "name": "user enters username in the username textfield",
-  "keyword": "When "
+  "keyword": "And "
 });
 formatter.match({
   "location": "Login.user_enters_username_in_the_username_textfield()"
@@ -284,7 +324,7 @@ formatter.result({
 });
 formatter.step({
   "name": "user enters password in the password textfield",
-  "keyword": "When "
+  "keyword": "And "
 });
 formatter.match({
   "location": "Login.user_enters_password_in_the_password_textfield()"
@@ -334,11 +374,31 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user is logging successfully and goto homepage page",
-  "keyword": "When "
+  "name": "user enters username in the username textfield",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "AddUser.user_is_logging_successfully_and_goto_homepage_page()"
+  "location": "Login.user_enters_username_in_the_username_textfield()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters password in the password textfield",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Login.user_enters_password_in_the_password_textfield()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on the Login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Login.user_clicks_on_the_Login_button()"
 });
 formatter.result({
   "status": "passed"
@@ -385,11 +445,31 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user is logging successfully and goto homepage page",
-  "keyword": "When "
+  "name": "user enters username in the username textfield",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "AddUser.user_is_logging_successfully_and_goto_homepage_page()"
+  "location": "Login.user_enters_username_in_the_username_textfield()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters password in the password textfield",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Login.user_enters_password_in_the_password_textfield()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on the Login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Login.user_clicks_on_the_Login_button()"
 });
 formatter.result({
   "status": "passed"
