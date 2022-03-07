@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="88.69682">
-<testcase classname="Checking the Add user functionality in the application" name="Check Add user functionality with required detail" time="17.918998">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="89.740473">
+<testcase classname="Checking the Add user functionality in the application" name="Check Add user functionality with required detail" time="17.536946">
 <system-out><![CDATA[Given user is on Login page.................................................passed
 And user enters username in the username textfield..........................passed
 And user enters password in the password textfield..........................passed
@@ -17,7 +17,7 @@ When user clicks on the SAVE button.........................................pass
 Then user successfully added the user.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Checking the search add user functionality in the application" name="Check the search add user functionality with required detail" time="18.157633">
+<testcase classname="Checking the search add user functionality in the application" name="Check the search add user functionality with required detail" time="17.811191">
 <system-out><![CDATA[Given user is on Login page.................................................passed
 And user enters username in the username textfield..........................passed
 And user enters password in the password textfield..........................passed
@@ -29,13 +29,13 @@ And user clicks on the Delete button........................................pass
 Then user is successfully Deleted...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Check the ForgetPassword functionality of the application" name="Checking the ForgetPassword functionality click on the link" time="8.313439">
+<testcase classname="Check the ForgetPassword functionality of the application" name="Checking the ForgetPassword functionality click on the link" time="8.93275">
 <system-out><![CDATA[Given user is on Login page.................................................passed
 When user clicks on the forget password link................................passed
 Then user is redirecting to the ForgetPassword page.........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Checking Login functionality of the application" name="Checking Login functionality with the valid login credentials" time="12.215934">
+<testcase classname="Checking Login functionality of the application" name="Checking Login functionality with the valid login credentials" time="11.939815">
 <system-out><![CDATA[Given user is on Login page.................................................passed
 And user enters username in the username textfield..........................passed
 And user enters password in the password textfield..........................passed
@@ -43,7 +43,7 @@ When user clicks on the Login button........................................pass
 Then user is on Homepage....................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Checking Logout functionality of the application" name="Checking the Logout functionality" time="13.776689">
+<testcase classname="Checking Logout functionality of the application" name="Checking the Logout functionality" time="16.692003">
 <system-out><![CDATA[Given user is on Login page.................................................passed
 And user enters username in the username textfield..........................passed
 And user enters password in the password textfield..........................passed
@@ -52,7 +52,7 @@ And user is click on Welcome user button....................................pass
 Then user clicks on the Logout button.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Checking the search add user functionality in the application" name="Check the search add user functionality with required detail" time="18.314127">
+<testcase classname="Checking the search add user functionality in the application" name="Check the search add user functionality with required detail" time="16.827768">
 <system-out><![CDATA[Given user is on Login page.................................................passed
 And user enters username in the username textfield..........................passed
 And user enters password in the password textfield..........................passed

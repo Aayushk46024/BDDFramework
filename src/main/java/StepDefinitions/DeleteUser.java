@@ -4,7 +4,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
 
-import static StepDefinitions.Login.driver;
+import static StepDefinitions.BaseTest.driver;
 
 public class DeleteUser {
     @And("^user selects the user as per the enter name$")

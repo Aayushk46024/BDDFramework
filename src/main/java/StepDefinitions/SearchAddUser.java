@@ -5,7 +5,7 @@ import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
 
 import static StepDefinitions.AddUser.userName;
-import static StepDefinitions.Login.driver;
+import static StepDefinitions.BaseTest.driver;
 
 public class SearchAddUser {
 

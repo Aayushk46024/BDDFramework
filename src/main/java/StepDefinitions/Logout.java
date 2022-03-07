@@ -2,10 +2,10 @@ package StepDefinitions;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en_scouse.An;
 import org.openqa.selenium.By;
 
-import static StepDefinitions.Login.driver;
+import static StepDefinitions.BaseTest.driver;
+
 
 public class Logout {
     @And("^user is click on Welcome user button$")

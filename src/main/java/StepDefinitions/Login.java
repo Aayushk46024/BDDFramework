@@ -7,13 +7,11 @@ import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class Login {
-   static WebDriver driver;
+public class Login extends BaseTest {
 
     @Given("^user is on Login page$")
     public void user_is_on_Login_page()
@@ -22,19 +20,19 @@ public class Login {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
         driver.manage().window().maximize();
-        driver.get("https://opensource-demo.orangehrmlive.com/");
+        driver.get(prop.getProperty("url"));
     }
 
     @And("^user enters username in the username textfield$")
     public void user_enters_username_in_the_username_textfield()
     {
-        driver.findElement(By.id("txtUsername")).sendKeys("Admin");
+        driver.findElement(By.id("txtUsername")).sendKeys(prop.getProperty("username"));
     }
 
     @And("^user enters password in the password textfield$")
     public void user_enters_password_in_the_password_textfield()
     {
-        driver.findElement(By.id("txtPassword")).sendKeys("admin123");
+        driver.findElement(By.id("txtPassword")).sendKeys(prop.getProperty("password"));
     }
 
     @When("^user clicks on the Login button$")

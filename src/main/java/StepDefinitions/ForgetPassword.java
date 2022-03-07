@@ -5,7 +5,7 @@ import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
-import static StepDefinitions.Login.driver;
+import static StepDefinitions.BaseTest.driver;
 
 public class ForgetPassword {
 

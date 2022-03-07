@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.Random;
 
-import static StepDefinitions.Login.driver;
+import static StepDefinitions.BaseTest.driver;
 
 public class AddUser {
     static String names[] = {"Aayush", "Sachin", "Shiphali", "Amanjeet", "Gulshan", "Purvaa", "Gunshajam"};
@@ -32,7 +32,7 @@ public class AddUser {
     @And("^user selects the User Role$")
     public void user_selects_the_User_Role()
     {
-        Select dropdown1 = new Select(driver.findElement(By.name("systemUser[userType]")));
+        Select dropdown1 = new Select(driver.findElement(By.id("systemUser_userType")));
         dropdown1.selectByVisibleText("Admin");
     }
 
